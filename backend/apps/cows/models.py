@@ -25,7 +25,7 @@ class Cow(models.Model):
         help_text="Breed specification (e.g. Holstein Friesian Cross, Jersey Cross, Sahiwal)",
     )
     joined_on = models.DateField(
-        default=timezone.now,
+        default=timezone.localdate,
         help_text="Date acquired or born on farm",
     )
     status = models.CharField(
